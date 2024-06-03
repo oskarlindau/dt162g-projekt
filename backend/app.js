@@ -47,7 +47,7 @@ app.use('/api/scheduledMinutes', scheduledMinutesRoutes);
 connectDatabase();
 
 // Kör seed-funktionen från "seed.js"
-// seed();
+seed();
 
 // error handler
 app.use(function(err, req, res, next) {
