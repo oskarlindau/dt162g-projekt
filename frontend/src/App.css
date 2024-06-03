@@ -1,0 +1,192 @@
+header {
+  text-align: center;
+  background-color: rgb(194, 191, 229);
+  margin-bottom: 2rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  margin: 0;
+  padding: 1.5rem 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(194, 191, 229);
+}
+
+footer {
+  background-color: rgb(194, 191, 229);
+  text-align: center;
+  margin-top: auto;
+  font-weight: 500;
+}
+
+/* Tabell */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: rgb(194, 191, 229);
+  color: #333; 
+  font-weight: 600;
+}
+
+tr {
+  padding: 0;
+}
+
+td {
+  vertical-align: middle;
+}
+
+tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, .075);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgba(0, 0, 0, .025);
+}
+
+@media screen and (max-width: 640px) {
+  thead, th {
+      display: none;
+  }
+  tr, td {
+      display: block;
+      background-color: rgba(0, 0, 0, .05);
+  }
+  tr {
+      border: 1px solid rgba(0, 0 , 0 ,.15);
+      margin-bottom: 2rem;
+  }
+  tr:last-child {
+      margin-bottom: 0;
+  }
+  tr:nth-child(even) td {
+      background-color: transparent;
+  }
+  td {
+      clear: both;
+      text-align: right;
+  }
+  td:before {
+      content: attr(data-label)' ';
+      float: left;
+      font-weight: bold;
+      margin-right: 1rem;
+  }
+  .knappdiv {
+    justify-content: center !important;
+    width: 100%;
+  }
+  .knappdiv button {
+    flex-basis: 50% !important;
+  }
+  .activity {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* MODAL */
+
+.ReactModal__Content {
+  text-align: center;
+}
+
+form {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+form input, form select {
+  height: 32px;
+  font-size: 1rem;
+}
+
+.knapp-div {
+  margin-top: .5rem;
+  gap: .5rem;
+}
+
+/* KNAPPAR */
+
+button {
+  height: 42px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: none;
+  border-radius: .25rem;
+}
+
+.red-btn {
+  background-color: rgb(226, 139, 139);
+}
+.red-btn:hover {
+  background-color: rgb(213, 132, 132);
+}
+
+
+.green-btn {
+  background-color: rgb(124, 222, 124);
+}
+.green-btn:hover {
+  background-color: rgb(103, 194, 103);
+}
+
+
+/* AKTIVITETER */
+
+.activity {
+  background-color: #eeecfa;;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #c2bfe5;;
+}
+
+.activity p {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.activity div {
+  display: flex;
+  gap: .5rem;
+}
